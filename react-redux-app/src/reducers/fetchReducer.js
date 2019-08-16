@@ -1,4 +1,4 @@
-import {FETCHING_HOUSE_DATA} from '../actions/index'
+import {FETCHING_HOUSE_DATA_LOADING, FETCHING_HOUSE_DATA_SUCCESS} from '../actions/index'
 
 
 const initialState = {
@@ -12,10 +12,18 @@ const initialState = {
 
 export const fetchReducer = (state=initialState, action) => {
     switch(action.type) {
-        case FETCHING_HOUSE_DATA:
+        case FETCHING_HOUSE_DATA_LOADING:
             return {
                 ...state,
                 isLoading: true,
+                error: ''
+            }
+
+        case FETCHING_HOUSE_DATA_SUCCESS:
+            return {
+                ...state,
+                isLoading: false,
+                houses: action.payload,
                 error: ''
             }
 
