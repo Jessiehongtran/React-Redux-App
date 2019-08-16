@@ -18,5 +18,7 @@ export const getData = () => {
             .catch(err => 
                 dispatch({type: FETCHING_HOUSE_DATA_FAILURE, payload: err.response}))
 
+       
     }
 }
+

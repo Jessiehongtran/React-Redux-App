@@ -9,7 +9,7 @@ function App(props) {
   console.log('props in App', props)
   return (
     <div className="App">
-      <h1>Welcome to Ice and Fire world!</h1>
+      <h1>Welcome to GAME OF THRONE houses discovery!</h1>
       <button onClick={props.getData}> 
         {props.isLoading ?
           <Loader 

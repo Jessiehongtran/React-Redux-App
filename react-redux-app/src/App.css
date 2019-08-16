@@ -1,4 +1,42 @@
 .App {
   text-align: center;
+  background-image: url('https://images4.alphacoders.com/242/thumb-1920-242556.png')
 }
 
+h1 {
+  font-family: 'Game of Thrones';
+  color: #2c3243
+}
+
+.houses {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+.house-card {
+  border: 2px solid black;
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Game of Thrones';
+  color: black;
+
+}
+
+.house-card:hover {
+  background-color: #8b7d3a
+}
+
+button {
+  font-family: 'Game of Thrones';
+  color: #2c3243;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #8b7d3a;
+  color: white;
+}
