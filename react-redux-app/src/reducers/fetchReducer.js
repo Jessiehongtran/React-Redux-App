@@ -1,10 +1,12 @@
-import { bindActionCreators } from "redux";
+const initialState = {
+    test: 'it is working!'
+}
 
 
 
 
-export const fetchReducer = (state, action) => {
-    switch(bindActionCreators.type) {
+export const fetchReducer = (state=initialState, action) => {
+    switch(action.type) {
 
 
         default:
