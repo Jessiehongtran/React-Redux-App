@@ -6,9 +6,10 @@ import { applyMiddleware, createStore} from 'redux'
 import {Provider} from 'react-redux'
 import {fetchReducer} from './reducers/fetchReducer'
 import logger from 'redux-logger'
+import thunk from 'redux-thunk'
 
 
-export const store = createStore(fetchReducer, applyMiddleware(logger))
+export const store = createStore(fetchReducer, applyMiddleware(thunk))
 
 console.log('store', store)
 
