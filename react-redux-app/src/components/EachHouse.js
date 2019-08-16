@@ -11,3 +11,4 @@ const EachHouse = props => {
 }
 
 export default EachHouse;
+
