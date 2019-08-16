@@ -1,5 +1,5 @@
 const initialState = {
-    test: 'it is working!'
+    isLoading: false
 }
 
 
