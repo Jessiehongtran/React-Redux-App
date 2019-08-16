@@ -1,5 +1,6 @@
 const initialState = {
-    isLoading: false
+    isLoading: false,
+    houses: []
 }
 
 

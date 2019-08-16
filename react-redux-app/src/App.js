@@ -9,17 +9,17 @@ function App(props) {
   return (
     <div className="App">
       <h1>Welcome to Ice and Fire world!</h1>
-        {props.isLoading ?  
-          <Loader 
+      {props.isLoading ?  
+        <Loader 
           type="Oval"
           color="gray"
           height="30"
           width="30" /> : 
-          <button>
+        <button>
           Discover Houses
-          </button>}
-     
-      <Houses test={props.test}/>
+        </button>}
+
+      <Houses houses = {props.houses}/>
     </div>
   );
 }
@@ -27,7 +27,8 @@ function App(props) {
 const mapStateToProps = state => {
   console.log('state in mapStateToProps', state)
   return {
-    isLoading: state.isLoading
+    isLoading: state.isLoading,
+    houses: state.houses
   }
 }
 
